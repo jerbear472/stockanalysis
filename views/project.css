@@ -1,0 +1,18 @@
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
+body {
+  background: Silver;
+  font-size: 80px;
+  font-family: "Lobster";
+  text-align: center;
+}
+
+h1 {
+  color: Black;
+  font-size: 100px;
+  background: #FF2323;
+  text-align: center;
+  font-family: "Pacifico"
+
+}
