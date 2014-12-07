@@ -7,7 +7,9 @@
 
   <body>
     <h1>Stock Forecast</h1>
-    <%=@stocks%>
+    <% @stocks.each do |stock| %>
+      <p><%= stock.name %>: <%= stock.target %></p>
+    <% end %>
 
     <form>
     <link rel="stylesheet" type="text/css" href="project.css">
