@@ -6,6 +6,7 @@ require_relative 'models/stock.rb'
 class MyApp < Sinatra::Base
 
   get '/home' do
+    @stockgetter=Stockgetter.new
     @stocks = Stock.all
     erb :index
   end
