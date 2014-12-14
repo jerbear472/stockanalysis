@@ -3,7 +3,7 @@ require 'open-uri'
 
 class Stockgetter
   def initialize
-    
+
     html = open("http://www.i3investor.com/jsp/pt.jsp")
     nokogiri = Nokogiri::HTML(html)
     stock_info = nokogiri.css('div.roundbox725b table.nc tr') 
@@ -20,3 +20,4 @@ class Stockgetter
     end
   end
 end
+

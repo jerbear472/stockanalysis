@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stock Forecast</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="project.css">
+
+  </head>
+
+  <body>
+   
+   <h1><b>Stock Forecast</b></h1>
+    <% @stocks.each do |stock| %>
+      <p><b>Name:<%= stock.name %>: | Target:<%= stock.target %>: | Current:<%= stock.current %></b></p>
+    <% end %>
+
+
+  </body>
+
+</html>

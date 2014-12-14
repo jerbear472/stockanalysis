@@ -11,4 +11,9 @@ class MyApp < Sinatra::Base
     erb :index
   end
 
+  get '/stocks' do
+    @stocks = Stock.all
+    erb :tenplate
+  end
+
 end

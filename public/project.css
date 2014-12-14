@@ -13,6 +13,7 @@ body {
     padding: 100px;
     border: 10px solid Black;
     margin: 10px;
+    height: 665px
 }
 
 .stocks{
@@ -20,6 +21,8 @@ body {
 }
 
 h1 {
+  border-style: solid;
+  border-color: Black;
   color: White;
   font-size: 100px;
   background: #FF2323;
