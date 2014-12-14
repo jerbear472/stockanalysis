@@ -2,23 +2,33 @@
 <html>
   <head>
     <title>Stock Forecast</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="project.css">
+
   </head>
 
   <body>
-    <h1>Stock Forecast</h1>
+   
+   <h1><b>Stock Forecast</b>.</h1>
     <% @stocks.each do |stock| %>
-      <p><%= stock.name %>: <%= stock.target %></p>
+      <p><b><%= stock.name %>: <%= stock.target %>: <%= stock.current %></b>.</p>
     <% end %>
-
-    <form>
-    <link rel="stylesheet" type="text/css" href="project.css">
-    Stock Name:<br>
-    <input type="text" name="stockname">
-    <br>
-    </form>
-
-
+    
+   <div class="stocks">
+    <span id="stocksearch">
+    Search: 
+   </span>
+  <form>
+    <select name="menu" style="font-family:'Arial';color:#000000;background-color:#FFFFFF;font-size:10pt;">
+    <option value="http://www.i3investor.com/ptservlet.jsp?sa=pts&q=AMZN">AMZN</option>
+    <option value="http://www.i3investor.com/ptservlet.jsp?sa=pts&q=CCL">CCL</option>
+    <option value="http://www.i3investor.com/ptservlet.jsp?sa=pts&q=GOOGL">GOOGL</option>
+    </select>
+    <input type="button" onClick="location=this.form.menu.options[this.form.menu.selectedIndex].value;" value="GO" style="font-family:'Arial';color:#000000;background-color:#FFFFFF;font-size:10pt;">
+  </form>
+  
+  </div>
 
   </body>
 
