@@ -13,11 +13,11 @@
    
    <h1><b>Stock Forecast</b></h1>
   <form action="/" method="post">
-    <select name="stock">
+    <select name="stock"><b>
       <% @stocks.each do |stock| %>
       <option value=<%= stock.name %>><%= stock.name %></option>
       <%end%>
-    </select>
+    </select></b>
     <input type="submit">
   </form>
     

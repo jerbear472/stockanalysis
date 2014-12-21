@@ -2,10 +2,10 @@
 
 
 body {
-  font-size: 80px;
+    font-size: 80px;
     font-family: "Amatic SC";
     text-align: center;
-    color:White;
+    color:#FFFF00;
     background-image: url("empire-bg.jpg");
     border-style: solid;
     border-color: Black;
