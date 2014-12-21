@@ -13,20 +13,9 @@
    <h1><b>Stock Forecast</b></h1>
 
     
-   <div class="stocks">
-    <span id="stocksearch">
-    Search: 
-   </span>
-  <form>
-    <select name="menu" style="font-family:'Times New Roman';color:#000000;background-color:#FFFFFF;font-size:20pt;">
-    <option value="http://www.i3investor.com/ptservlet.jsp?sa=pts&q=AMZN">AMZN</option>
-    <option value="http://www.i3investor.com/ptservlet.jsp?sa=pts&q=CCL">CCL</option>
-    <option value="http://www.i3investor.com/ptservlet.jsp?sa=pts&q=GOOGL">GOOGL</option>
-    </select>
-    <input type="button" onClick="location=this.form.menu.options[this.form.menu.selectedIndex].value;" value="GO" style="font-family:'Times New Roman';color:#000000;background-color:#FFFFFF;font-size:23px;">
-  </form>
-  
-  </div>
+  <% @stocks.each do |stock| %>
+      <p><b>Name:<%= stock.name %> | Target:<%= stock.target %> | Current:<%= stock.current %> | Percentage Difference:<%=stock.create_percentage_difference %></b></p>
+    <% end %>
 
   </body>
 

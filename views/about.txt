@@ -1,3 +1,5 @@
+Inorder to create this application/website we used ruby, sublime, html and css.
+
 We created a class called Stock
 In this we initialized and we also made a readers for it
 
