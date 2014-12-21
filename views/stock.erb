@@ -9,15 +9,13 @@
   </head>
 
   <body>
+
    
    <h1><b>Stock Forecast</b></h1>
-
     
-  <% @stocks.each do |stock| %>
-      <p><b>Name:<%= stock.name %> | Target:<%= stock.target %> | Current:<%= stock.current %> | Percentage Difference:<%=stock.create_percentage_difference.to_f.round_to(2).to_s + "%" %></b></p>
-    <% end %>
-
+    <p><b>Name:<%= @stock.name %> | Target:<%= @stock.target %> | Current:<%= @stock.current %> | Percentage Difference:<%=@stock.create_percentage_difference.to_f.round_to(2).to_s + "%" %></b></p>
+  </form>
+    
   </body>
 
 </html>
-    

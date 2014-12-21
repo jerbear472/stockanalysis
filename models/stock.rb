@@ -28,11 +28,21 @@ class Stock
   end
 
   def create_percentage_difference
-    loc=@target/@current
-    @percentage_difference = loc.to_s + "%"
+    @percentage_difference.to_s + "%"
+  end
+end
+
+
+class Float
+  def round_to(x)
+    (self * 10**2).round.to_f / 10**2
   end
 
-  def create_percentage_difference
-    @percentage_difference
+  def ceil_to(x)
+    (self * 10**2).ceil.to_f / 10**2
+  end
+
+  def floor_to(x)
+    (self * 10**2).floor.to_f / 10**2
   end
 end
